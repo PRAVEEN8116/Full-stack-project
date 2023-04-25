@@ -1,0 +1,32 @@
+
+<img src="assets/bg6.jpeg"  width="1255" height="477">
+
+       <form #updateform="ngForm" (ngSubmit)="update(updateform)" class="box">
+        <h3> Update Hotel Details</h3><hr>
+           
+           <label for="name"> Name : </label>&nbsp;
+           <input type="text" id="name"  #name (ngModel)="name" name="name">
+           <br><br>
+
+           <label for="age"> Age : </label>&nbsp;
+           <input type="number" id="age"  #age (ngModel)="age" name="age">
+           <br> <br>
+
+           <label for="contact"> Contact : </label>&nbsp;
+           <input type="number" id="contact"  #contact (ngModel)="contact" name="contact">
+           <br><br>
+
+           <label for="date"> Date : </label>&nbsp;
+           <input type="date" id="date"  #date (ngModel)="date" name="date">
+           <br><br>
+
+
+           <label for="time"> Time : </label>&nbsp;
+           <input type="time" id="time"  #time (ngModel)="time" name="time">
+           <br><br>
+   
+           <input type="submit" value="Update" >
+
+           
+   
+       </form>

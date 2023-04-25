@@ -1,0 +1,33 @@
+
+
+<img src="assets/bg5.jpeg"  width="1255" height="655">
+
+       <form #insertform="ngForm" (ngSubmit)="insert(insertform)" class="box">
+        <h3> Insert Hotel Details</h3><hr>
+           
+           <label for="name"> name : </label>&nbsp;
+           <input type="text" id="name"  #name (ngModel)="name" name="name">
+           <br><br>
+
+           <label for="age"> age : </label>&nbsp;
+           <input type="number" id="age"  #age (ngModel)="age" name="age">
+           <br> <br>
+
+           <label for="contact"> contact : </label>&nbsp;
+           <input type="number" id="contact"  #contact (ngModel)="contact" name="contact">
+           <br><br>
+
+           <label for="date"> date : </label>&nbsp;
+           <input type="date" id="date"  #date (ngModel)="date" name="date">
+           <br><br>
+
+
+           <label for="time"> time : </label>&nbsp;
+           <input type="time" id="time"  #time (ngModel)="time" name="time">
+           <br><br>
+   
+           <input type="submit" value="Insert" >
+
+           
+   
+       </form>

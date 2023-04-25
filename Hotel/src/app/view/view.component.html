@@ -1,0 +1,37 @@
+
+
+
+<div class="box" align="center">
+    <h3 class="heading">Hotel</h3>
+    <div class="link">
+       <ul class="link1">
+      <li class="link2"> <a routerLink="/insert" routerLinkActive="" class="link3">INSERT </a> </li>
+      <li class="link2"><a routerLink="/update" routerLinkActive="" class="link3">UPDATE </a> </li>
+      <li class="link2"><a routerLink="/delete" routerLinkActive="" class="link3">DELETE </a> </li>
+       </ul>
+    </div>
+    
+    
+    <div align="center">
+      
+       <table class="t1">
+             <thead class="t2">
+                       <tr class="t3">
+                          <th class="t4">name</th>
+                          <th class="t5">age</th>
+                          <th class="t6">contact</th>
+                          <th class="t7">date</th>
+                          <th class="t8">time</th>
+                       </tr>
+             </thead>
+             <tbody>
+                       <tr *ngFor="let d of data">
+                         <td class="t4">{{d.name}}</td>
+                         <td class="t5">{{d.age}}</td>
+                         <td class="t6">{{d.contact}}</td>
+                         <td class="t7">{{d.date}}</td>
+                         <td class="t8">{{d.time}}</td>
+                       </tr>
+    
+              </tbody>
+       </table>

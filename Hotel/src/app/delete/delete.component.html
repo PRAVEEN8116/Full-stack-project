@@ -1,0 +1,12 @@
+
+
+<img src="assets/bg7.jpeg"  width="1255" height="577">
+
+<form #deleteform="ngForm" (ngSubmit)="delete(deleteform)" class="box">
+ <h3> Delete Hotel Details</h3><hr>
+    <label for="name"> Name: </label>&nbsp;
+    <input type="text" id="name" #name (ngModel)="name" name="name">
+    <br> <br>
+
+    <input type="submit" value="Delete" >
+    </form>
